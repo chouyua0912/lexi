@@ -74,7 +74,7 @@ public class Char extends Glyph {
 
 	@Override
 	public void accept(IVisitor visitor) {
-		visitor.visitChar(this);
+		visitor.visitChar(this);		// 传入了分析策略，分析策略知道实现类的类型。提供了不同方法给实现类来调用。
 	}
 
 	@Override
